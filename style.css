@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%) ;
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%) ;
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%) ;
+  --White : hsl(0, 0%, 100%) ;
+  --Light-gray : hsl(0, 0%, 81%) ;
+  --Light-grayish-blue: hsl(210, 46%, 95%) ;
+}
+
+* {
+  padding: 0 ;
+  margin: 0 ;
+  box-sizing: border-box ;
+  background-color: var(--Light-grayish-blue) ;
+  font-family: 'Barlow Semi Condensed', sans-serif ;
+  font-size: 13px ;
+}
+
+body {
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  height: 100vh ;
+}
+
+main {
+  width: 1200px ;
+  height: 600px ;
+  display: grid ;
+  grid-template-columns: repeat(4 ,1fr ) ;
+  grid-template-rows: repeat(2 , 1fr) ;
+  grid-template-areas: "per1 per1 per2 per5" "per3 per4 per4 per5" ;
+  gap: 22px 30px ;
+}
+
+p , div , img {
+  background-color: transparent ;
+}
+
+img {
+  width: 30px ;
+  border-radius: 50% ;
+  margin-right: 20px ;
+  border: 1px solid var(--White) ;
+}
+
+.person_1,
+.person_2,
+.person_3,
+.person_4,
+.person_5 {
+  font-family: inherit;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: space-evenly ;
+  align-items: flex-start ;
+  padding: 10px 30px ;
+  border-radius: 10px ;
+  background-color: var(--Light-grayish-blue) ;
+  min-width: fit-content ;
+}
+
+.p1 {
+  font-size: 20px ;
+}
+
+.p2 {
+  color: inherit ;
+  opacity: .5 ;
+}
+
+.div_1 {
+  display: flex ;
+  align-items: center ;
+}
+
+.person_1 {
+  grid-area: per1 ;
+  background-color: var(--Moderate-violet) ;
+  background-image: url(/images/Design_1/bg-pattern-quotation.svg) ;
+  background-repeat: no-repeat ;
+  background-position: top right 18% ;
+}
+
+.person_1 .div_1_1,
+.person_2 .div_1_1,
+.person_4 .div_1_1 {
+  color: var(--Light-grayish-blue) ;
+}
+
+.person_1 .p3,
+.person_2 .p3,
+.person_3 .p3,
+.person_4 .p3, 
+.person_5 .p3 {
+  font-size: 20px ;
+  color: var(--Light-grayish-blue) ;
+  font-weight: 600 ;
+  margin-bottom: 10px ;
+}
+
+.person_1 .p4,
+.person_2 .p4,
+.person_3 .p4,
+.person_4 .p4,
+.person_5 .p4 {
+  font-size: 14px ;
+  color: var(--Light-grayish-blue) ;
+  opacity: 70% ;
+  margin-bottom:15px ;
+  line-height: 20px ;
+}
+
+.person_3 .p3,
+.person_5 .p3,
+.person_3 .p4,
+.person_5 .p4 {
+  color: var(--Very-dark-blackish-blue) ;
+}
+
+.person_2{
+  grid-area: per2 ;
+  background-color: var(--Very-dark-grayish-blue) ;
+}
+
+.person_3 {
+  grid-area: per3 ;
+  background-color: var(--White) ;
+
+}
+
+.person_4 {
+  grid-area: per4 ;
+  background-color: var(--Very-dark-blackish-blue) ;
+}
+
+.person_5 {
+  grid-area: per5 ;
+  background-color: var(--White) ;
+}
+
+footer {
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
